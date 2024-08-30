@@ -14,8 +14,10 @@ header, footer {
     color: #fff;
 }
 
-header img {
-    height: 50px;
+header img, footer img {
+    height: 50px; 
+    width: 100px; 
+    height: auto;
 }
 
 nav ul {
@@ -31,28 +33,21 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    border-bottom: 2px solid transparent; 
-    padding-bottom: 5px; 
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
 }
 
 nav ul li a:hover, nav ul li a:focus {
     color: #ccc;
-    border-bottom: 2px solid #ccc; 
+    border-bottom: 2px solid #ccc;
 }
 
 main {
     display: flex;
     justify-content: center;
-    align-items: center;    
-    min-height: 80vh;       
+    align-items: center;
+    min-height: 80vh;
     padding: 20px;
-}
-
-#form-cadastro {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 100%;
 }
 
 #form-fora {
@@ -60,7 +55,7 @@ main {
     border-radius: 15px;
     width: 100%;
     max-width: 600px;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 20px;
 }
 
@@ -92,7 +87,7 @@ main {
     background-color: rgb(24, 31, 123);
 }
 
-footer p, footer img {
+footer p {
     margin: 5px 0;
 }
 
@@ -100,17 +95,12 @@ footer a {
     color: #fff;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    padding-bottom: 5px; 
- }
+    padding-bottom: 5px;
+}
 
 footer a:hover, footer a:focus {
     color: #ccc;
-    border-bottom: 2px solid #ccc; 
-}
-
-footer img {
-    width: 100px;
-    height: auto;
+    border-bottom: 2px solid #ccc;
 }
 
 @media (max-width: 600px) {
@@ -121,10 +111,6 @@ footer img {
     header, footer {
         flex-direction: column;
         text-align: center;
-    }
-
-    #form-cadastro {
-        padding: 10px;
     }
 
     #form-fora {
